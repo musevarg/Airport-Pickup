@@ -57,7 +57,7 @@ function searchFlights()
 {
 	j = [];
 	var time = document.getElementById('mySelect').value;
-	$.getJSON("/api/arrivals/"+airportCode+"/"+(time-1), function(json) {
+	$.getJSON("../api/arrivals/"+airportCode+"/"+(time-1), function(json) {
 	var list = document.getElementById('flightList');
 	list.innerHTML = '<h2 onclick="closeFlightList();">Select a flight</h2><hr>';
     createFlightList(json, list);
@@ -141,7 +141,7 @@ function closeFlightInfo()
 
 function getAirports()
 {
-	$.getJSON("/api/airports", function(json) {
+	$.getJSON("../api/airports", function(json) {
     console.log(json);
 	});
 }
@@ -152,7 +152,7 @@ function updateSearch()
 	//results.innerHTML = '<option value="0">0:00</option><option value="1">1:00</option><option value="2">2:00</option><option value="3">3:00</option><option value="4">4:00</option>  <option value="5">5:00</option>  <option value="6">6:00</option>  <option value="7">7:00</option>';
 	//results.size=results.options.length;
 	var obj;
-	$.getJSON("/api/airports", function(json) {
+	$.getJSON("../api/airports", function(json) {
     //console.log(json);
     autocomplete(document.getElementById("myInput"), json);
 	});

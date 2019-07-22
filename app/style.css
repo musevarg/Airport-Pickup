@@ -1,0 +1,266 @@
+body {
+	margin:0;
+	overflow: hidden;
+}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {display:none;}
+.gmnoprint div {background:none !important;}
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+b
+{
+	color: rgb(0,128,128);
+}
+
+.mainBox
+{
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+#top
+{
+	flex: 0 1 50px;
+	width: 100%;
+	background-color: rgb(0,128,128);
+	z-index: 99;
+}
+
+#flightInfo
+{
+	flex: 0 1 0px;
+	max-height: 150px;
+	width: 100%;
+	background-color: white;
+	font-family: 'Roboto', cursive;
+	box-shadow: 0px 6px 8px #888888;
+	background-image: url('plane.png');
+	background-size: 60px;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	z-index: 10;
+}
+
+#map
+{
+	flex: 1 1 auto;
+	width: 100%;
+	background-color: white;
+	overflow: hidden;
+	z-index: 1;
+}
+
+#mapoverlay
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	background-image: url('https://d1t0xk6rn1avc6.cloudfront.net/wp-content/uploads/Edinburgh-Airport-Sign.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#directionsInfo
+{
+	flex: 0 1 0px;
+    width: 100%;
+	background-color: white;
+	font-family: 'Roboto', cursive;
+	box-shadow: 0px -6px 8px #888888;
+	z-index: 50;
+}
+
+.header h2
+{
+	width: 50%;
+	margin: auto;
+	margin-top: 13px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: normal;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.header a
+{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: inline-block;
+	background-color: rgb(0,128,128);
+	border: none;
+}
+
+.header a img
+{
+	width: 18px;
+	height: 18px;
+	filter: invert(100%);
+}
+
+#profileBtn
+{
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}
+
+#profileBtn img
+{
+	width: 20px;
+	height: 20px;
+}
+
+#searchBtn
+{
+	position: absolute;
+	display: none;
+	right: 50px;
+	top: 10px;
+}
+
+.searchBar
+{
+	position: absolute;
+	top: 60px;
+	width: 95%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Roboto', cursive;
+    font-weight: normal;
+    background-color: white;
+    padding: 10px;
+    z-index: 50;
+}
+
+
+.airportLabel
+{
+	margin: auto;
+	margin-left: 3%;
+	margin-right: 3%;
+	width: 94%;
+	margin-top: 10px; 
+}
+
+.searchBarContent  input
+{
+	margin: auto;
+	margin-left: 3%;
+	margin-right: 3%;
+	width: 94%;
+	margin-top: 5px;
+	font-family: 'Roboto', cursive;
+    font-weight: normal;
+    height: 32px;
+    font-size: 12px;
+}
+
+.pickTimeDiv
+{
+	margin: auto;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 15px;
+	width: 94%;
+}
+
+#left {
+	float:left;
+	width: 100px;
+}
+
+#right {
+	margin-left: 100px;
+}
+
+.searchBarContent label
+{
+	font-size: 12px;
+	width: auto;
+   padding: 8px 0;
+}
+
+.searchBarContent select
+{
+	height: 32px;
+	width: 96%;
+	margin-left: 4%;
+	font-family: 'Roboto', cursive;
+	font-size: 12px;
+    font-weight: normal;
+}
+
+.goBtn
+{
+	width: 100%;
+	font-size: 12px;
+	height: 32px;
+	background-color: rgb(0,128,128) !important;
+	opacity: 0.6;
+}
+
+.autocomplete {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  width: 95%;
+  	margin-left: 2.5%;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+#flightList
+{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-height: 90%;
+	width: 85%;
+	background-color: white;
+	font-family: 'Roboto', cursive;
+    font-weight: normal;
+    overflow: scroll;
+    z-index: 999;
+}

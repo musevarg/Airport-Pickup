@@ -1,0 +1,221 @@
+body
+{
+	background-image: url('app/plane.png');
+	background-size: 200px;
+	background-repeat: no-repeat;
+	background-position: 50% 90%;
+	background-color: rgb(0,150,150);
+	z-index: 1;
+}
+
+b
+{
+	color: white;
+	font-family: "Arial";
+}
+
+#main-container-reg
+{
+	margin-top: -20px;
+	display: none;
+}
+
+#address
+{
+	display: none;
+}
+
+
+.header
+{
+	position: fixed;
+	top: 0;
+	height: 50px;
+	width: 100%;
+	background-color: rgb(0,128,128);
+	z-index: 99;
+}
+
+.header h2
+{
+	width: 60%;
+	margin: auto;
+	margin-top: 13px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: normal;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+}
+
+#email {
+	width: 80%;
+	padding: 12px 20px;
+	display: block;  
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  #password {
+	width: 80%;
+	padding: 12px 20px;
+	display: block;  
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  
+  .button {
+	display: block;  
+	margin: 0 auto;
+	background-color: rgb(0,128,128);
+	color: white;
+	padding: 10px 10px;
+	border: none;
+	cursor: pointer;
+	width: 70%;
+  }
+  
+  
+  button:hover {
+	opacity: 0.8;
+  }
+  
+  .container_sub {
+	width: 100%;
+	padding: 5px 0px;
+  }
+  
+  .container_main {
+   margin: auto;
+   width: 320px;
+   height: auto;
+  }
+  
+  .container_button {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  }
+
+  .container_button_2 {
+  padding-top: 10px;
+  padding-bottom: 25px;
+  }
+
+  .text {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: "Comfortaa";
+  font-size: 30px;
+  color: white;
+  }
+  
+  .label {
+  padding-left: 28px;
+  padding-bottom: 7px;
+  }
+  
+  .outer {
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+  }
+  
+  .middle {
+	margin-top: 70px;
+  }
+  
+  .inner {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+  }
+  .image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	padding-top: 10px;
+	padding-bottom: 20px;
+  
+  }
+  
+  #errorLogin {
+	 display: none;
+	 color: #FF0000;
+	 padding-left: 30px; 
+  }
+  #errorEmail {
+	 display: none;
+	 color: #FF0000;
+	 padding-left: 30px; 
+  }
+
+  #subForm{
+  	padding-top: 20px;
+  }
+
+  #regBtn{
+  	padding-top: 20px;
+  }
+
+  #inputPostcode{
+  	margin-bottom: 5px;
+  }
+
+  .form-row {
+	 height: 80px;
+  }
+
+  .btn-primary {
+	font-size: 14px;
+	 border-color: rgb(0,128,128); 
+	 background-color: rgb(0,128,128);
+	 width: 230px;
+  }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+	  font-size: 14px;
+	  background-color: #76c2af;
+	  border-color: #76c2af; /*set the color you want here*/
+  }
+  input {
+	  display:inline;
+  }
+  * {
+	border-radius: 0 !important;
+  }
+  .form-control {
+   font-size: 14px;
+   margin-top: 5px;
+  }
+
+
+  #regMessageImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: 35%;
+	max-width: 300px;
+	padding-top: 0px;
+	padding-bottom: 53px;
+}
+
+.text2 {
+	color: rgb(0,128,128);
+	font-family: "Comfortaa";
+	text-align: center;
+}
+
+.imageVer {
+    margin: auto;    
+	display: block;
+}

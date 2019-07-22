@@ -1,0 +1,65 @@
+.header
+{
+	position: fixed;
+	top: 0;
+	height: 50px;
+	width: 100%;
+	background-color: rgb(0,128,128);
+	z-index: 99;
+}
+
+.header h2
+{
+	width: 50%;
+	margin: auto;
+	margin-top: 13px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: normal;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.header a img
+{
+	width: 18px;
+	height: 18px;
+	filter: invert(100%);
+}
+
+#searchBtn
+{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.title
+{
+	margin-top: 70px;
+	text-align: center;
+}
+
+.buttons
+{
+	margin: auto;
+	width: 90%;
+	text-align: center;
+}
+
+
+
+#profile
+{
+	margin-top: 20px;
+	overflow-y: scroll;
+}
+
+.details
+{
+	margin: auto;
+	width: 90%;
+}
+

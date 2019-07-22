@@ -1,0 +1,143 @@
+<html><head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- Include CSS File Here -->
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="login.css">
+<link rel="manifest" href="manifest.json">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <h2><strong>airport</strong> pickup</h2>
+</div>
+
+<div class="outer">
+  <div class="middle" id="signin">
+    <div class="inner">
+       <form name="form" id="form" class="form" action="">
+		 
+         <div class="container_sub">
+         <label class="label" for="uname"><b>Email</b></label>
+         <input name="email" type="text" id="email" placeholder="Enter email" required=""><span id="errorEmail">Invalid email address!</span>
+         </div>
+        
+         <div class="container_sub">
+         <label class="label" for="psw"><b>Password</b></label>
+         <input name="password" type="password" id="password" required="" placeholder="Enter Password"><span id="errorLogin">Email or Password incorrect!</span>
+         </div>
+          	  
+		    <div class="container_button">
+         <button class="button" type="submit">Login</button>
+          </div>
+      
+	     <div class="container_button_2">
+         <button class="button" type="button" id="signupbtn">Sign Up</button>
+         </div>
+       </form> 
+    </div>
+  </div>
+
+      <div id="main-container-reg" class="container-fluid">
+         <div class="col text-center">
+            <p class="text" id="headerText">Create Account</p>
+         </div>
+         <form id="regForm" method="post" action="">
+            <div class="form-row">
+               <div class="form-group col-md-3 mx-auto">
+                  <b>Email</b>
+                  <input type="text" name="email" class="form-control" id="inputEmail" required placeholder="Email"><span id="errorEmail" class="error"></span>
+               </div>
+            </div>
+            <div class="form-row">
+               <div class="form-group col-md-3 mx-auto">
+                  <b id="pass">Password</b>
+                  <input type="password" name="password" class="form-control" id="inputPassword" required placeholder="Password"><span class="error"></span>
+               </div>
+            </div>
+               <div class="form-row">
+               <div class="form-group col-md-3 mx-auto">
+                  <b>Confirm Password</b>
+                  <input type="password" name="password2" class="form-control" id="inputPassword2" required placeholder="Confirm password"><span class="error"></span>
+               </div>
+            </div>
+
+
+            <div class="form-row">
+               <div class="form-group col-md-3 mx-auto">
+                  <b>Subscription</b>
+                  <select name="inputSubscription" id="inputSubscription" required class="form-control">
+                     <option value="trial">Free 30 days trial</option>
+                     <option value="personal">Standard: £5.99 / month</option>
+                     <option value="enterprise" disabled>Enterprise</option>
+                  </select>
+                  <span class="error"> </span>
+               </div>
+            </div>
+
+
+            <div id="address">
+              <center><b>Billing Address</b></center>
+              <div class="form-row">
+               <div class="form-group col-md-3 mx-auto">
+                  <b>Forename</b>
+                  <input type="text" name="forename" class="form-control" id="inputForename" placeholder="First name"><span class="error"></span>
+               </div>
+            </div>
+            <div class="form-row">
+               <div class="form-group col-md-3 mx-auto">
+                  <b>Surname</b>
+                  <input type="text" name="surname" class="form-control" id="inputSurname" placeholder="Last name"><span class="error"></span>
+               </div>
+            </div>
+            <div class="form-row">
+               <div class="form-group col-md-3 mx-auto">
+                  <b>Street</b>
+                  <input type="text" name="street" class="form-control" id="inputStreet" placeholder="Street's name"><span class="error"></span>
+               </div>
+            </div>
+            <div class="form-row">
+               <div class="form-group col-md-3 mx-auto">
+                  <b>Town/City</b>
+                  <input type="text" name="townCity" class="form-control" id="inputTownCity" placeholder="Town/City"><span class="error"></span>
+               </div>
+            </div>
+            <div class="form-row">
+               <div class="form-group col-md-3 mx-auto">
+                  <b>Postcode</b>
+                  <input type="text" name="postcode" class="form-control" id="inputPostcode" placeholder="Postcode">
+               </div>
+            </div>
+            </div>
+
+
+            <div id="registerBtn" class="col text-center">
+               <p>
+                  <button type="submit" class="btn btn-primary">Register</button>
+               </p>
+            </div>
+
+            <div class="col text-center">
+               <p>
+                  <button type="button" class="btn btn-primary" id="signinbtn">Sign In</button>
+               </p>
+            </div>
+         </form>
+
+          <div id="paypalBtn" class="col text-center">
+            <form id="paypalForm" name="paypalForm" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+               <input type="hidden" name="cmd" value="_s-xclick">
+               <input type="hidden" name="hosted_button_id" value="3DVLE6V8JHLTL">
+               <img alt="" border="0" src="https://www.sandbox.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+            </form>
+         </div>
+      </div>
+
+      </div>
+
+<script type="text/javascript" src="login.js"> </script>
+
+</body></html>

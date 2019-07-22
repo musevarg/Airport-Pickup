@@ -1,0 +1,66 @@
+<htmL>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Airport Pickup</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="profile.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKfzrRm8UtGzJo9Z-ek0gX4l2eeRtfzUk" type="text/javascript"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://rawgit.com/googlemaps/v3-utility-library/master/richmarker/src/richmarker.js"></script>
+  <script src="profile.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+  <h2><strong>airport</strong> pickup</h2>
+      <a id="searchBtn" class="btn btn-default" onclick="searchButton();">
+       <img src="../app/search.png">
+  </a>
+</div>
+
+<h3 class="title">Account Details</h3>
+
+<div class="buttons">
+  <button id="logoutbtn" type="submit" class="btn btn-danger" onclick="logout();">Logout</button>
+  <button id="updatebtn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateModal">Update details</button>
+</div>
+
+<div id="profile">
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="modal-body" class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="updateDetails();" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</htmL>

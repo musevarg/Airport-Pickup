@@ -1,0 +1,121 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airport Pickup</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"/> 
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKfzrRm8UtGzJo9Z-ek0gX4l2eeRtfzUk" type="text/javascript"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://rawgit.com/googlemaps/v3-utility-library/master/richmarker/src/richmarker.js"></script>
+<script src="main.js"></script>
+
+</head>
+
+<body>
+
+  <div class="mainBox">
+
+    <div id="top">
+    
+<div class="header">
+  <h2><strong>airport</strong> pickup</h2>
+      <a id="searchBtn" class="btn btn-default" onclick="searchButton();">
+       <img src="search.png">
+  </a>
+    <a id="profileBtn" class="btn btn-default" onclick="profileButton();">
+       <img src="profile.png">
+  </a>
+</div>
+
+</div>
+
+<div id="flightInfo">
+
+ <!-- <div style="width:100%"> <div style="float:left;height:100%;width:50%;padding:5px;"> <p style="font-size:15px;text-align:center;font-weight:bold;">17:55 - 17:56</p> <p style="font-size:12px;text-align:center;"><span style="color:rgb(0,128,128);font-weight:bold;">From Manchester</span><br><span>Manchester Airport</span></p> <p style="font-size:12px;text-align:center;"><span style="color:rgb(0,128,128);font-weight:bold;">To Edinburgh</span><br><span>Edinburgh Airport</span></p></div> <div style="float:right;height:100%;width:50%;padding:5px;"> <p style="font-size:20px;font-weight: bold;text-align:center;">BA12345</p><p style="font-size:20px;font-weight: bold;text-align:center;color:red">DELAYED</p><p style="font-size:12px;text-align:center;">Estimated Arrival Time:<br><span style="font-size:15px;font-weight:bold;">18:50</span></p></div></div> -->
+
+
+</div>
+
+<div id="mapoverlay">
+</div>
+
+<div id="map">
+</div>
+
+<div id="directionsInfo">
+  
+  <!-- <div style="width:100%"><div style="float:left;height:120px;width:70%;padding:5px;"><p style="font-size:14px;text-align:center;">Arriving for <span style="font-size:15px;font-weight:bold;color:rgb(0,128,128);">12:50</span></p><p style="font-size:16px;text-align:center;">Turn left on Machin Street</p></div><div style="float:right;height:120px;width:30%;padding:5px;"><p style="font-size:12px;text-align:center;">Live Navigation</p><a id="leaveBtn" class="btn btn-default" style="width: 100%; color: white;font-weight:bold;font-size:14px;background-color: rgb(0,128,128);">Stop</a></div></div> -->
+
+</div>
+
+</div>
+<!-- END OF MAIN BOX -->
+
+      <div id="searchBar" class="searchBar">
+  <div class="searchBarContent">
+
+    <div class="autocomplete">
+        <input id="myInput" class="form-control" type="text" name="flightSearch" placeholder="Enter city">
+    </div>
+
+<div class="pickTimeDiv">
+
+  <div id="left">
+      <label>Flight lands after:</label>
+  </div>
+
+  <div id="right">
+    
+    <select id="mySelect" class="form-control" onchange="searchFlights();" disabled>
+      <option value="0">0:00</option>
+      <option value="1">1:00</option>
+      <option value="2">2:00</option>
+      <option value="3">3:00</option>
+      <option value="4">4:00</option>
+      <option value="5">5:00</option>
+      <option value="6">6:00</option>
+      <option value="7">7:00</option>
+      <option value="8">8:00</option>
+      <option value="9">9:00</option>
+      <option value="10">10:00</option>
+      <option value="11">11:00</option>
+      <option value="12">12:00</option>
+      <option value="13">13:00</option>
+      <option value="14">14:00</option>
+      <option value="15">15:00</option>
+      <option value="16">16:00</option>
+      <option value="17">17:00</option>
+      <option value="18">18:00</option>
+      <option value="19">19:00</option>
+      <option value="20">20:00</option>
+      <option value="21">21:00</option>
+      <option value="22">22:00</option>
+      <option value="23">23:00</option>
+  </select>
+
+  </div>
+
+</div>
+
+
+
+</div>
+</div>
+
+<div id="flightList">
+</div>
+
+
+
+</body>
+</html>
+

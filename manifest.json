@@ -1,0 +1,16 @@
+{
+  "short_name": "Airport Pickup",
+  "name": "Airport Pickup",
+  "icons": [
+    {
+      "src": "favico.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/appF/",
+  "background_color": "#008080",
+  "display": "standalone",
+  "scope": "/appF/",
+  "theme_color": "#008080"
+}

@@ -1,5 +1,5 @@
 <?php 
-$link = mysqli_connect('localhost', 'u969528694_dsp', 'dsp123', 'u969528694_dsp'); 
+$link = mysqli_connect('', '', '', ''); 
 if (!$link)
 { 
 	die('Could not connect to MySQL: ' . mysqli_error()); 

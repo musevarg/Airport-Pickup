@@ -1,5 +1,11 @@
 # Airport Pickup - Progressive Web App
 
+### Context
+
+This application was developed as part of a pilot programme aiming to give students experience of real-world challenges. Five teams of students across Scotland were competing and this project ultimately won the prize.
+
+More information available [here](https://digitalskillspartnership.scot/digital-skills-partnership-pilot-programme-takes-radical-new-approach-to-delivering-work-ready-tech-talent/).
+
 ### A smartphone app to reduce airport drop-off charges
 
 19 of the UK's 30 busiest airports charge drivers for a 10-minute drop-off or collection, with fees ranging from £1 to £4.50.
@@ -14,7 +20,7 @@ The departure time is calculated using live flight data and obtaining the up-to-
 
 ### Progressive Web App
 
-This app can run within a web browser and standalone as
+The app can run within a web browser and standalone as
 a [progressive web app](https://developers.google.com/web/progressive-web-apps/) on Android devices.
 
 iOS does not allow progressive web apps to fetch the user's location (yet), but the app can be installed on iOS and will run normally up

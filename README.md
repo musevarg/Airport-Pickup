@@ -31,4 +31,4 @@ When run within a web browser, the application works on all devices.
 Flights API: [flightstats.com](https://developer.flightstats.com)  
 Traffic and Directions: [Google APIs](https://developers.google.com/maps/documentation/directions/start)
 
-![](https://www.sedhna.com/airportpickup/screens.png)
+![](https://github.com/musevarg/Airport-Pickup/blob/master/pic.png?raw=true)
